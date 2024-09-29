@@ -5,15 +5,15 @@
 class Flow < Formula
   desc ""
   homepage "https://flowexec.io"
-  version "0.5.2"
+  version "0.6.0"
   license "Apache-2.0"
 
-  depends_on "xclip"
+  depends_on "xclip" if OS.linux?
 
   on_macos do
     on_intel do
-      url "https://github.com/jahvon/flow/releases/download/v0.5.2/flow_v0.5.2_darwin_amd64.tar.gz"
-      sha256 "fd55fab5177d766a284f23484c708cc3c1cbe51b655d65632ae52d9047becd0c"
+      url "https://github.com/jahvon/flow/releases/download/v0.6.0/flow_v0.6.0_darwin_amd64.tar.gz"
+      sha256 "a7f53b3453d838e7c29c56ed0b5962436f9fe182ef4204d50be3ef631f787b21"
 
       def install
         bin.install "flow"
@@ -23,8 +23,8 @@ class Flow < Formula
       end
     end
     on_arm do
-      url "https://github.com/jahvon/flow/releases/download/v0.5.2/flow_v0.5.2_darwin_arm64.tar.gz"
-      sha256 "a35d5eaea9a20a15cb0e5d64b6dc8fa1a7fafe5feea0690cbe0321ad5b2b4ed6"
+      url "https://github.com/jahvon/flow/releases/download/v0.6.0/flow_v0.6.0_darwin_arm64.tar.gz"
+      sha256 "5e22477d13e3564c51f054ef198bf0ed1840ce5814fcb9b03c9e1bef70fed0c4"
 
       def install
         bin.install "flow"
@@ -38,8 +38,8 @@ class Flow < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jahvon/flow/releases/download/v0.5.2/flow_v0.5.2_linux_amd64.tar.gz"
-        sha256 "d0e925ddd24ea70234360b13c05bf83a0200c7cf86cd28e1508727b01ee57591"
+        url "https://github.com/jahvon/flow/releases/download/v0.6.0/flow_v0.6.0_linux_amd64.tar.gz"
+        sha256 "a4197838353ede4726fe0a0ce48de67d7773d03b1985547fb1952279f248a658"
 
         def install
           bin.install "flow"
@@ -51,8 +51,8 @@ class Flow < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jahvon/flow/releases/download/v0.5.2/flow_v0.5.2_linux_arm64.tar.gz"
-        sha256 "58224d962b5e77ae7233d9ab61b72c99d54f91a1c92b1bb82b66517e9e6038ae"
+        url "https://github.com/jahvon/flow/releases/download/v0.6.0/flow_v0.6.0_linux_arm64.tar.gz"
+        sha256 "c38add3337e3de0034a5c7b084e8f3bdfc9410d144758e41fde4039748d2bec5"
 
         def install
           bin.install "flow"
