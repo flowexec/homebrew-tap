@@ -5,15 +5,15 @@
 class Flow < Formula
   desc ""
   homepage "https://flowexec.io"
-  version "0.6.0"
+  version "0.6.1"
   license "Apache-2.0"
 
   depends_on "xclip" if OS.linux?
 
   on_macos do
     on_intel do
-      url "https://github.com/jahvon/flow/releases/download/v0.6.0/flow_v0.6.0_darwin_amd64.tar.gz"
-      sha256 "a7f53b3453d838e7c29c56ed0b5962436f9fe182ef4204d50be3ef631f787b21"
+      url "https://github.com/jahvon/flow/releases/download/v0.6.1/flow_v0.6.1_darwin_amd64.tar.gz"
+      sha256 "ceb29f0d919b3aee9bd4e259d9f60dada881d94470b621a66d5f6050120e73b5"
 
       def install
         bin.install "flow"
@@ -23,8 +23,8 @@ class Flow < Formula
       end
     end
     on_arm do
-      url "https://github.com/jahvon/flow/releases/download/v0.6.0/flow_v0.6.0_darwin_arm64.tar.gz"
-      sha256 "5e22477d13e3564c51f054ef198bf0ed1840ce5814fcb9b03c9e1bef70fed0c4"
+      url "https://github.com/jahvon/flow/releases/download/v0.6.1/flow_v0.6.1_darwin_arm64.tar.gz"
+      sha256 "bb3a5be2aba534f9a6e662294ab1235990da944017e4f4355d84659305f04349"
 
       def install
         bin.install "flow"
@@ -38,8 +38,8 @@ class Flow < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jahvon/flow/releases/download/v0.6.0/flow_v0.6.0_linux_amd64.tar.gz"
-        sha256 "a4197838353ede4726fe0a0ce48de67d7773d03b1985547fb1952279f248a658"
+        url "https://github.com/jahvon/flow/releases/download/v0.6.1/flow_v0.6.1_linux_amd64.tar.gz"
+        sha256 "6225b1d12fe4dd35570246ca1bcf6ee278afb461044bce1b6e74ea289716be77"
 
         def install
           bin.install "flow"
@@ -51,8 +51,8 @@ class Flow < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jahvon/flow/releases/download/v0.6.0/flow_v0.6.0_linux_arm64.tar.gz"
-        sha256 "c38add3337e3de0034a5c7b084e8f3bdfc9410d144758e41fde4039748d2bec5"
+        url "https://github.com/jahvon/flow/releases/download/v0.6.1/flow_v0.6.1_linux_arm64.tar.gz"
+        sha256 "87c75f41ca48aaa77493f405383667fe9e2ba4b57fb271290f31fef3af94b426"
 
         def install
           bin.install "flow"
