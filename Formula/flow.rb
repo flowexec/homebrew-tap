@@ -5,15 +5,15 @@
 class Flow < Formula
   desc ""
   homepage "https://flowexec.io"
-  version "0.6.2"
+  version "0.6.3"
   license "Apache-2.0"
 
   depends_on "xclip" if OS.linux?
 
   on_macos do
-    on_intel do
-      url "https://github.com/jahvon/flow/releases/download/v0.6.2/flow_v0.6.2_darwin_amd64.tar.gz"
-      sha256 "d6e1718686d8008cf0f9816ebca7f439a2c90be9afbd7dec5354cbe2c9782f80"
+    if Hardware::CPU.intel?
+      url "https://github.com/jahvon/flow/releases/download/v0.6.3/flow_v0.6.3_darwin_amd64.tar.gz"
+      sha256 "7c2e3c4e32fcb74b794733755831f8a2437a0148011c672596e2865dca30b9aa"
 
       def install
         bin.install "flow"
@@ -22,9 +22,9 @@ class Flow < Formula
         fish_completion.install "completions/flow.fish"
       end
     end
-    on_arm do
-      url "https://github.com/jahvon/flow/releases/download/v0.6.2/flow_v0.6.2_darwin_arm64.tar.gz"
-      sha256 "146b5cee736e410fa0bda589dabd4d11ac9345528250e32a2295562ec4b55c0d"
+    if Hardware::CPU.arm?
+      url "https://github.com/jahvon/flow/releases/download/v0.6.3/flow_v0.6.3_darwin_arm64.tar.gz"
+      sha256 "e9c3aeaf04aa48bcebb4d1ab93a8eac217e29fbc7bbca95303a6a517c362a0f6"
 
       def install
         bin.install "flow"
@@ -36,10 +36,10 @@ class Flow < Formula
   end
 
   on_linux do
-    on_intel do
+    if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jahvon/flow/releases/download/v0.6.2/flow_v0.6.2_linux_amd64.tar.gz"
-        sha256 "590156d2ab6261d9ab81b2ded0f1a088503a2ec408f7a2e759f9378fd2bcece5"
+        url "https://github.com/jahvon/flow/releases/download/v0.6.3/flow_v0.6.3_linux_amd64.tar.gz"
+        sha256 "e2210af8e2bf7c69803cfa421805d25db281fd18632b4846e3a84f4959dbd515"
 
         def install
           bin.install "flow"
@@ -49,10 +49,10 @@ class Flow < Formula
         end
       end
     end
-    on_arm do
+    if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jahvon/flow/releases/download/v0.6.2/flow_v0.6.2_linux_arm64.tar.gz"
-        sha256 "be08912d7d0f2f0b1c218982ce0b4097c3abe970972eeee1cf1e41a6791c14e7"
+        url "https://github.com/jahvon/flow/releases/download/v0.6.3/flow_v0.6.3_linux_arm64.tar.gz"
+        sha256 "c5ede3fef66d7e8a686c6f34f460c83929ccda447fbcc49eb0c990162924a547"
 
         def install
           bin.install "flow"
