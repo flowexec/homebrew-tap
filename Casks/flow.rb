@@ -19,22 +19,22 @@ cask "flow" do
   on_macos do
     on_intel do
       url "https://github.com/jahvon/flow/releases/download/v1.0.0-beta2/flow_v1.0.0-beta2_darwin_amd64.tar.gz"
-      sha256 "8fb6b00abbc2ddf5febc3a438939c5bfea879133019452570e72c66e9874379b"
+      sha256 "fecde506a328e06c794dbf8db0bcd3907388e41e6f8d6e5f4408c46e101d926a"
     end
     on_arm do
       url "https://github.com/jahvon/flow/releases/download/v1.0.0-beta2/flow_v1.0.0-beta2_darwin_arm64.tar.gz"
-      sha256 "b792bdb4d9350b042a0013d4e93a295cd7f60ffd362663f34e1b377ce0c1f709"
+      sha256 "80a082ac7a2b1b8796268ab5b9277da95621182c85c55fe422c676eb93aee54b"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/jahvon/flow/releases/download/v1.0.0-beta2/flow_v1.0.0-beta2_linux_amd64.tar.gz"
-      sha256 "3f914390e7e5d4473374f185fe45f5d40e9c4a0364a3706f9de9f4d2c4c441fa"
+      sha256 "32016ad8793653060222c93c95de26d68a9b8188712e64508feead8cc8af20fc"
     end
     on_arm do
       url "https://github.com/jahvon/flow/releases/download/v1.0.0-beta2/flow_v1.0.0-beta2_linux_arm64.tar.gz"
-      sha256 "b072f3298e301004d789aba9877c2ebd40652977c189ecdbd7f8fb7e964e1bc2"
+      sha256 "0deb93cde66affa146f7afa6766c0f0756233b0b84f0345ed526c6897a78e510"
     end
   end
 
