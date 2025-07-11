@@ -5,15 +5,15 @@
 class Flow < Formula
   desc ""
   homepage "https://flowexec.io"
-  version "1.0.0-beta1"
+  version "1.0.0"
   license "Apache-2.0"
 
   depends_on "xclip" if OS.linux?
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jahvon/flow/releases/download/v1.0.0-beta1/flow_v1.0.0-beta1_darwin_amd64.tar.gz"
-      sha256 "00f2ffff8f103d471229728831ae3fce1ad3b819974ef0e57b19de112a89a90f"
+      url "https://github.com/flowexec/flow/releases/download/v1.0.0/flow_v1.0.0_darwin_amd64.tar.gz"
+      sha256 "26f4da360bfc63f1109d11884a69b1aff5bd8f862c6afb7ef36abf579efac66e"
 
       def install
         bin.install "flow"
@@ -23,8 +23,8 @@ class Flow < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jahvon/flow/releases/download/v1.0.0-beta1/flow_v1.0.0-beta1_darwin_arm64.tar.gz"
-      sha256 "6dbbbb9e893f79bfb1a9535b8b8cba32df84ac7c280a3f32b2a69fbd85614996"
+      url "https://github.com/flowexec/flow/releases/download/v1.0.0/flow_v1.0.0_darwin_arm64.tar.gz"
+      sha256 "c1b0f8e0fb90714d9a56db520c0450b4f68eaf5142fd51c575066a1cd257de5c"
 
       def install
         bin.install "flow"
@@ -37,8 +37,8 @@ class Flow < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/jahvon/flow/releases/download/v1.0.0-beta1/flow_v1.0.0-beta1_linux_amd64.tar.gz"
-      sha256 "475d0eeae1952568821a67e52e8dc327eafaa1beb611057ead582c351ab128e1"
+      url "https://github.com/flowexec/flow/releases/download/v1.0.0/flow_v1.0.0_linux_amd64.tar.gz"
+      sha256 "5ff5c22fe7b6d648c059b5a1c7d91b45ffd0a5b0e0a73b1647e32ca5fd7a36f2"
       def install
         bin.install "flow"
         bash_completion.install "completions/flow.bash"
@@ -47,8 +47,8 @@ class Flow < Formula
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/jahvon/flow/releases/download/v1.0.0-beta1/flow_v1.0.0-beta1_linux_arm64.tar.gz"
-      sha256 "ca112a1307eb08cd00527e641bca52b3d676bd5225e8c08b21238ea85282c875"
+      url "https://github.com/flowexec/flow/releases/download/v1.0.0/flow_v1.0.0_linux_arm64.tar.gz"
+      sha256 "6342dee9e3c753b1b8ef6cf7c58917a4bf29f857f195e962995f2f43632a8720"
       def install
         bin.install "flow"
         bash_completion.install "completions/flow.bash"
