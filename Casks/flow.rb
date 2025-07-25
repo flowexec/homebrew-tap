@@ -2,7 +2,7 @@
 cask "flow" do
   desc ""
   homepage "https://flowexec.io"
-  version "1.0.0"
+  version "1.0.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,29 +12,26 @@ cask "flow" do
   bash_completion "completions/flow.bash"
   zsh_completion "completions/flow.zsh"
   fish_completion "completions/flow.fish"
-  depends_on cask: [
-      "xclip",
-    ]
 
   on_macos do
     on_intel do
-      url "https://github.com/flowexec/flow/releases/download/v1.0.0/flow_v1.0.0_darwin_amd64.tar.gz"
-      sha256 "26f4da360bfc63f1109d11884a69b1aff5bd8f862c6afb7ef36abf579efac66e"
+      url "https://github.com/flowexec/flow/releases/download/v1.0.1/flow_v1.0.1_darwin_amd64.tar.gz"
+      sha256 "250f2e625af7b897f3f45ef684e2b6117be163cc6148149ffd6142b97af34dbd"
     end
     on_arm do
-      url "https://github.com/flowexec/flow/releases/download/v1.0.0/flow_v1.0.0_darwin_arm64.tar.gz"
-      sha256 "c1b0f8e0fb90714d9a56db520c0450b4f68eaf5142fd51c575066a1cd257de5c"
+      url "https://github.com/flowexec/flow/releases/download/v1.0.1/flow_v1.0.1_darwin_arm64.tar.gz"
+      sha256 "6c3f99ad5deb7ea7c299a509661ea5f0bd4ac7d9f59d0a0edef858730abcce47"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/flowexec/flow/releases/download/v1.0.0/flow_v1.0.0_linux_amd64.tar.gz"
-      sha256 "5ff5c22fe7b6d648c059b5a1c7d91b45ffd0a5b0e0a73b1647e32ca5fd7a36f2"
+      url "https://github.com/flowexec/flow/releases/download/v1.0.1/flow_v1.0.1_linux_amd64.tar.gz"
+      sha256 "87c0335407add7d9ae87c3ef8bd46b7023520cfd3e1c5bd43e5e7ade68d57e31"
     end
     on_arm do
-      url "https://github.com/flowexec/flow/releases/download/v1.0.0/flow_v1.0.0_linux_arm64.tar.gz"
-      sha256 "6342dee9e3c753b1b8ef6cf7c58917a4bf29f857f195e962995f2f43632a8720"
+      url "https://github.com/flowexec/flow/releases/download/v1.0.1/flow_v1.0.1_linux_arm64.tar.gz"
+      sha256 "b14291a7bfb7a1e550b022dac30d162bff3cc64a903699c0ebc575917d2c4588"
     end
   end
 
