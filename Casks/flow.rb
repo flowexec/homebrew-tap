@@ -2,36 +2,36 @@
 cask "flow" do
   desc ""
   homepage "https://flowexec.io"
-  version "1.0.3"
+  version "1.1.0"
 
   livecheck do
     skip "Auto-generated on release."
   end
 
   binary "flow"
-  bash_completion "completions/flow.bash"
-  zsh_completion "completions/flow.zsh"
-  fish_completion "completions/flow.fish"
+  bash_completion "scripts/completions/flow.bash"
+  zsh_completion "scripts/completions/flow.zsh"
+  fish_completion "scripts/completions/flow.fish"
 
   on_macos do
     on_intel do
-      url "https://github.com/flowexec/flow/releases/download/v1.0.3/flow_v1.0.3_darwin_amd64.tar.gz"
-      sha256 "aa7d0ed0bf5fcb7983370722059377f69f70a94c6ed86ebcfc3f0b1a3a6539fe"
+      url "https://github.com/flowexec/flow/releases/download/v1.1.0/flow_v1.1.0_darwin_amd64.tar.gz"
+      sha256 "78bf196e2d709161e3d79d17918970278103fdf3924a098595cb01cab6d84736"
     end
     on_arm do
-      url "https://github.com/flowexec/flow/releases/download/v1.0.3/flow_v1.0.3_darwin_arm64.tar.gz"
-      sha256 "7a0dac08ef72ddd4f82342084f5c7aac709836080ccd2dbdbad4e72692b121b0"
+      url "https://github.com/flowexec/flow/releases/download/v1.1.0/flow_v1.1.0_darwin_arm64.tar.gz"
+      sha256 "22f164c517d6cdaf832b68a265d2b911ffc624e71526f6a2167fcc5aec579487"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/flowexec/flow/releases/download/v1.0.3/flow_v1.0.3_linux_amd64.tar.gz"
-      sha256 "a732613020c77e9d882afae98876a77e792eff2327dafd737545002a5512e4f7"
+      url "https://github.com/flowexec/flow/releases/download/v1.1.0/flow_v1.1.0_linux_amd64.tar.gz"
+      sha256 "ce57311e035e89c300fa9594670b6534de656a75e881109756401c71ecff0fe5"
     end
     on_arm do
-      url "https://github.com/flowexec/flow/releases/download/v1.0.3/flow_v1.0.3_linux_arm64.tar.gz"
-      sha256 "a2d820327fcf8ee999f3d06bdc016f98adc9b40873401230cb4fdd710e2171f5"
+      url "https://github.com/flowexec/flow/releases/download/v1.1.0/flow_v1.1.0_linux_arm64.tar.gz"
+      sha256 "62e625f5937fc54fce5a44200cc119fda54d2c9d825fe84633044cf0c99e2716"
     end
   end
 
