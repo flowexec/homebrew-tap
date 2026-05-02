@@ -17,22 +17,22 @@ cask "flow" do
   on_macos do
     on_intel do
       url "https://github.com/flowexec/flow/releases/download/v#{version}/flow_v#{version}_darwin_amd64.tar.gz"
-      sha256 "3be7435c88af43ad2fb91c8b4ac42441520c4d11ecace3832fcfad31b4054b98"
+      sha256 "93798865c285500174710eff6112827efb1c0d9cdfb286253ffadc0289642b3c"
     end
     on_arm do
       url "https://github.com/flowexec/flow/releases/download/v#{version}/flow_v#{version}_darwin_arm64.tar.gz"
-      sha256 "86319c4d4df3a7845b26181fcbbe1a3565a33e07d4a2f03ff32bc8125471fe52"
+      sha256 "0a07a0dd1b5ea8c5ef97d5ca2d711f667856b01f9d53fc89330b299b15904a34"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/flowexec/flow/releases/download/v#{version}/flow_v#{version}_linux_amd64.tar.gz"
-      sha256 "a5617142fa808e18d09bcd3c44ad7d3b3677569e726448438aada6cea7a5caa1"
+      sha256 "20ec5ceca6a308c85615eda210b76150bf1c4e1c1cb54c0a1b2d95b66226c6c1"
     end
     on_arm do
       url "https://github.com/flowexec/flow/releases/download/v#{version}/flow_v#{version}_linux_arm64.tar.gz"
-      sha256 "6cd5eadfac8869e601723fa23652fa73b2c250dac7d982d6adbd5d45a49dbb9a"
+      sha256 "3cb6c21448dfdf0f3fb8c516f9fb34fbd7087eb5a4fbe23ebeaedcce1cde4887"
     end
   end
 
